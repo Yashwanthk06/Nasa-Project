@@ -1,0 +1,109 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;  /* white background */
+  color: #000000;             /* black text for readability */
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #1f2833;  /* optional: can lighten this if needed */
+  padding: 20px;
+  color: #66fcf1;
+}
+
+/* Main content */
+main {
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  color: #45a29e;
+}
+
+#data-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px dashed #45a29e;
+  border-radius: 10px;
+  min-height: 120px;
+}
+
+/* Update the AQI color classes so text contrasts well on white background */
+
+.good {
+  background-color: #00e400; /* Green */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fair {
+  background-color: #ffff00; /* Yellow */
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.moderate {
+  background-color: #ff7e00; /* Orange */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.unhealthy {
+  background-color: #ff0000; /* Red */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.very-unhealthy {
+  background-color: #8f3f97; /* Purple */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hazardous {
+  background-color: #7e0023; /* Maroon */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 20px 10px;
+  }
+  #data-container {
+    padding: 10px;
+  }
+  h1, h2 {
+    font-size: 1.2em;
+  }
+}
+#about-air-quality h2 {
+  color: #45a29e;
+}
+
+#about-air-quality ul {
+  list-style-type: square;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#about-air-quality a {
+  color: #1f8efa;
+  text-decoration: none;
+}
+
+#about-air-quality a:hover {
+  text-decoration: underline;
+}
+
+

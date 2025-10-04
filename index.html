@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA Space Apps Challenge 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>From EarthData to Action 🌍</h1>
+    <p>Predicting Cleaner, Safer Skies — NASA Space Apps Challenge 2025</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Welcome</h2>
+      <p>This website is part of the NASA Space Apps Challenge project. 
+         We will use Earth observation data to visualize and predict air quality and weather safety.</p>
+    </section>
+
+
+    <section id="data">
+      <label for="city-select">Select a city:</label>
+<select id="city-select">
+        <option value="28.6139,77.209">Delhi</option>
+        <option value="40.7128,-74.0060">New York</option>
+        <option value="51.5074,-0.1278">London</option>
+        <option value="35.6895,139.6917">Tokyo</option>
+        <option value="48.8566,2.3522">Paris</option>
+</select>
+<select id="city-select"> ... </select>
+<div id="spinner" style="display:none;">
+  <p>Loading data...</p>
+</div>
+<div id="data-container"></div>
+
+
+
+      </select>
+
+      <div id="data-container"></div>
+
+      <!-- Canvas for chart -->
+      <canvas id="aqiChart" width="400" height="200"></canvas>
+    </section>
+<section id="about-air-quality" style="margin-top: 40px;">
+  <h2>About Air Quality</h2>
+  <p>Air quality is an indicator of how clean or polluted the air we breathe is. It is important for our health and environment.</p>
+  <ul>
+    <li><a href="https://earthdata.nasa.gov/" target="_blank" rel="noopener">NASA Earth Data</a></li>
+    <li><a href="https://www.who.int/health-topics/air-pollution" target="_blank" rel="noopener">World Health Organization - Air Pollution</a></li>
+    <li><a href="https://aqicn.org/" target="_blank" rel="noopener">Global Air Quality Insights - AQICN</a></li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer>
+    <p>Team Project — 2025 NASA Space Apps Challenge</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
